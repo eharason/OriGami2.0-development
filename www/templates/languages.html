@@ -1,0 +1,44 @@
+<ion-view view-title="{{'appinfo' | translate}}" ng-controller="languageController">
+    <ion-content style="background-color:#80DEEA; height: 100%;">
+        <div class="lang-tab">
+            <div class="information">
+                <ng-md-icon icon="{{icon}}" style="fill: white;" size="70"></ng-md-icon>
+                <h1 style="font-size: 28px;"> {{ 'choose_language' | translate }}</h1>
+                <h1 style="font-size: 15px;">{{'current_language' | translate }}: <b>{{currentLanguage}}</b></h1>
+            </div>
+        </div>
+
+        <div class="list animate-fade-slide-in-right" style="background-color:#80DEEA; height:100%;">
+            <a style="position:absolute;left:15%;top:10%;" ng-click="changeLanguage('de')">
+                <div style="text-align:center; ">
+                    <img src="./img/icons/Germany.png">
+                    <p class="lang-country">Deutsch</p>
+                </div>
+            </a>
+            <a style="position:absolute;right:15%;top:10%;" ng-click="changeLanguage('pt')">
+                <div style="text-align:center;">
+                    <img src="./img/icons/Portugal.png">
+                    <p class="lang-country">Português</p>
+                </div>
+            </a>
+            <a style="position:absolute;left:15%;top:40%;" ng-click="changeLanguage('es')">
+                <div style="text-align:center;">
+                    <img src="./img/icons/Spain.png">
+                    <p class="lang-country">Español</p>
+                </div>
+            </a>
+            <a div style="position:absolute;right:15%;top:40%;" ng-click="changeLanguage('en')">
+                <div style="text-align:center;">
+                    <img src="./img/icons/United-Kingdom.png">
+                    <p class="lang-country">English</p>
+                </div>
+            </a>
+
+            <!--   <a div style = "position:absolute;right:41%;top:25%;" ng-click = "changeLanguage('cat')">
+              <img src = "./img/icons/Spain.png">
+             
+          </a> -->
+
+        </div>
+    </ion-content>
+</ion-view>

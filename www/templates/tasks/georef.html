@@ -1,0 +1,37 @@
+<ion-view align-title="center"  view-title="Georeference">
+    <ion-nav-bar align-title="center" class="bar-positive">
+      <ion-nav-back-button></ion-nav-back-button>
+  </ion-nav-bar>
+    
+  <ion-content style = "background-color:#80DEEA;" data-tap-disabled="true">
+      <div class = "georef">
+          <div class="georef_step1">
+              <!-- Take a picture from the phone camera or local storage -->
+              <button class="button icon-left ion-camera" ng-click="takePicture()" style = "background-color:#FFEB3B" style="color:black;" ng-show = "isAndroid">Take a picture</button>
+              <button class="button icon-right ion-camera getpict"  ng-click="choosePhoto()" style = "background-color:#FFEB3B" style="color:black;" ng-show = "isAndroid">Get a picture</button>
+              
+              <!-- Upload Image from the local storage PC -->
+              <div ng-show ="isWeb" class = "photoPC">
+                  <h2>Select File</h2>
+                  <input class="btn btn-default" id = "photoPC" type="file" ng-model="myfile" required  maxsize="500" accept="image/*" ng-click="takePicture()" base-sixty-four-input>
+              </div>
+               
+              <!-- Display Picture here -->
+               <img  ng-show="isWeb" ng-src="data:image/jpeg;base64,{{myfile.base64}}">
+               <img  ng-show="isAndroid && imgURI != null" ng-src="{{imgURI}}">
+              
+          </div>
+          <div class="georef_step2">
+             <leaflet defaults="map.defaults" layers="map.layers" center="map.center" paths="map.paths" markers="map.markers" geojson="map.geojson" ng-if="map"></leaflet>
+          </div>
+          
+          <div class="georef_step3">
+              <button ng-show = "isWeb" class="button button-fab button-fab-bottom-right button-positive icon ion-checkmark-round waves-effect waves-button waves-light"  ng-click = "submitGRTask(myfile)"></button>
+              
+              <button ng-show = "isAndroid" class="button button-fab button-fab-bottom-right button-positive icon ion-checkmark-round waves-effect waves-button waves-light"  ng-click = "submitGRTaskAndroid()" ></button>
+              
+              <button class="button button-fab button-fab-bottom-left button-positive icon ion-chevron-left waves-effect waves-button waves-light" ng-click = "cancelGRTask()"></button>
+          </div>
+      </div>
+  </ion-content>
+</ion-view>

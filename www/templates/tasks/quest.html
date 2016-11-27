@@ -1,0 +1,47 @@
+<ion-view view-title="Question-Answer Game" style="background-color:#FF9800; height: 100%; padding: 0; margin:0; ">
+    <ion-content>
+        <div class="quest-tab">
+            <div class="information">
+                <i class="icon ion-help"></i>
+                <h2>Question</h2>
+                <h1 style="font-size:15px;"></h1>
+                <div class="question">
+                    <textarea rows="4" ng-model="qaGame.question"> </textarea>
+                </div>
+            </div>
+        </div>
+
+        <div class="answers">
+            <div class="answer">
+                <label class="item item-input item-floating-label">
+                    <input  type="text" ng-model="qaGame.answers[0]" placeholder="Answer 1" class="right-input" >
+                    <i class="icon ion-checkmark-round right"></i>
+                </label>
+            </div>
+
+            <div class="answer">
+                <label class="item item-input item-floating-label">
+                    <input type="text" ng-model="qaGame.answers[1]" placeholder="Answer 2" class="wrong-input">
+                    <i class="icon ion-close-round wrong"></i>
+                </label>
+            </div>
+
+            <div class="answer">
+                <label class="item item-input item-floating-label">
+                    <input type="text" ng-model="qaGame.answers[2]" placeholder="Answer 3" class="wrong-input">
+                    <i class="icon ion-close-round wrong"></i>
+                </label>
+            </div>
+
+            <div class="answer">
+                <label class="item item-input item-floating-label">
+                    <input type="text" ng-model="qaGame.answers[3]" placeholder="Answer 4" class="wrong-input">
+                    <i class="icon ion-close-round wrong"></i>
+                </label>
+            </div>
+        </div>
+
+        <button id="fab" class="button button-positive icon ion-plus button-fab " ng-click="submitQATask()" ui-sref="tab.newgame" style="position: absolute; bottom:5%; right: 2%;">
+            <button class="button button-fab button-positive icon ion-chevron-left waves-effect waves-button waves-light" ng-click="cancelGame()" style="position: absolute; bottom: 5%; left: 2%;"></button>
+    </ion-content>
+</ion-view>

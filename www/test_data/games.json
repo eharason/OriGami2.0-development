@@ -1,0 +1,41 @@
+{
+    "name": "City Exploration",
+    "description": "Easy game which tests you basic navigation abilities. Complete all the activities, share your results with friends and make your parents and friends proud! ",
+    "timecompl": "20 min",
+    "difficulty": "Easy",
+    "activities": [{
+        "points": [{
+          "name": "First",
+          "description": "Fav recycling types",
+          "lat": 48.135205,
+          "lng": 11.575748
+        }, {
+            "name": "Mensa",
+            "description": "All recycling types",
+            "lat": 48.131718,
+            "lng": 11.576027
+        }, {
+            "name": "Home",
+            "description": "All recycling",
+            "lat": 48.137754,
+            "lng": 11.575706
+        }, {
+            "name": "IfGI",
+            "description": "Paper and packaging",
+            "lat": 48.135520,
+            "lng": 11.576156
+        }],
+        "type": "Aided Wayfinding"
+    }],
+    "players": [{
+        "Player1": 100
+    }, {
+        "Player2": 100
+    }, {
+        "Player3": 100
+    }, {
+        "Player4": 100
+    }, {
+        "Player5": 100
+    }]
+}

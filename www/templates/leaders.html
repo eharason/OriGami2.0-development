@@ -1,0 +1,36 @@
+<ion-view style="background-color:#3F51B5;" ng-controller="leadersController">
+    <ion-content style="height:100%;width:100%;top:1%;">
+
+        <div style="width:100%;">
+            <h2 class="leadb_h">Leaderboard</h2>
+            <img class="leadb_ph" src="./img/icons/cup.svg">
+        </div>
+
+      <!--  <div class="leadb_sort">
+            <div class="cont">
+                <a ng-click = "active == 1">
+                    <p class="sort_h" ng-style="{active == '1' ? { 'width':'100%', color:'green' } : { 'width': '0%' }}">Points</p>
+                </a>
+            </div>
+            <div class="cont">
+                <a ng-click = "active == 2">
+                    <p class="sort_h">Games</p>
+                </a>
+            </div>
+        </div>
+-->
+        <div class="leadb">
+            <div class="row header">
+                <div class="col">Position</div>
+                <div class="col">Name</div>
+                <div class="col">Points</div>
+            </div>
+            <div class="row content" ng-repeat="data in players | orderBy:'-points'">
+                <div class="col" ng-class="{ 'oth_pl': $index > 2, 'best_pl' : $index == 0, 'sbest_pl' : $index == 1, 'tbest_pl' : $index == 2}">{{$index + 1}}</div>
+                <div class="col" ng-class="{ 'oth_pl': $index > 2, 'best_pl' : $index == 0, 'sbest_pl' : $index == 1, 'tbest_pl' : $index == 2}">{{data.name}}</div>
+                <div class="col" ng-class="{ 'oth_pl': $index > 2, 'best_pl' : $index == 0, 'sbest_pl' : $index == 1, 'tbest_pl' : $index == 2}">{{data.points}}</div>
+            </div>
+        </div>
+
+    </ion-content>
+</ion-view>

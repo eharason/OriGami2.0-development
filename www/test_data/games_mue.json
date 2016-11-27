@@ -1,0 +1,55 @@
+{
+    "name": "City Exploration",
+    "description": "Easy game which tests you basic navigation abilities. Complete all the activities, share your results with friends and make your parents and friends proud! ",
+    "timecompl": "20 min",
+    "difficulty": "Easy",
+    "activities": [{
+        "points": [{
+            "name": "Environmental Awareness - Recycling and Sustainability",
+            "description": "Good morning! It’s time to take the trash out. There are five destinations you must bring the trash to. From your starting point, assign a number to each destination (between 1 and 5) according to the order of stops you’d like to travel. Points are awarded for the shortest route!",
+            "lat": 51.969468,
+            "lng": 7.5957584,
+            "task": [{
+      				"type": "Question - Answer",
+      				"question": "Whats the name of Alex's city?",
+      				"answer": "Ufa"
+      			}]
+        }],
+        "type": "Path Planning"
+    }, {
+        "points": [{
+            "name": "Mensa",
+            "description": "All recycling types",
+            "lat": 51.9683714,
+            "lng": 7.59550094
+        }, {
+            "name": "Home",
+            "description": "All recycling",
+            "lat": 51.973447,
+            "lng": 7.595479
+        }, {
+            "name": "IfGI",
+            "description": "Paper and packaging",
+            "lat": 51.9691284,
+            "lng": 7.5960377,
+            "task": [{
+                "type": "Georeference",
+                "picture": "path/to/picture.jpeg",
+                "lat": 51.9691284,
+                "lng": 7.5960377
+            }]
+        }],
+        "type": "Aided Wayfinding"
+    }],
+    "players": [{
+        "Player1": 100
+    }, {
+        "Player2": 100
+    }, {
+        "Player3": 100
+    }, {
+        "Player4": 100
+    }, {
+        "Player5": 100
+    }]
+}

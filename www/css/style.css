@@ -1,0 +1,970 @@
+/* white Space Tab bug fix */
+
+.tabs-top > .tabs,
+.tabs.tabs-top {
+    top: 0 !important;
+}
+
+.has-tabs-top {
+    top: 47px !important;
+}
+
+.tabs-positive > .tabs {
+    background-color: #2196F3 !important;
+}
+
+@font-face {
+    font-family: sans-serif;
+}
+
+/* NEW HOME PAGE ---------------------------------------- */
+
+.person-type {
+    background-color: #80DEEA;
+    height: 100%;
+    position: relative;
+}
+
+.person-type .player {
+    background-color: #64B5F6;
+    height: 45%;
+    position: relative;
+}
+
+.person-type .player .type-picture {
+    height: 100%;
+    position: relative;
+}
+
+.person-type .player .type-picture img {
+    top: 35%;
+    left: 5%;
+    position: absolute;
+}
+
+.person-type .player .type-picture .info {
+    height: 100%;
+    left: 32%;
+    top: 35%;
+    position: absolute;
+    font-family: sans-serif;
+    font-weight: 500;
+    text-align: center;
+    display: block;
+}
+
+.person-type .player .type-picture .info h2 {
+    color: white;
+    font-family: sans-serif;
+    font-weight: 900;
+    font-size: 5vh;
+}
+
+.person-type .player .type-picture .info p {
+    color: white;
+    font-family: sans-serif;
+    font-weight: 500;
+    font-size: 2vh;
+}
+
+.person-type .player .type-picture .next {
+    left: 5%;
+    bottom: 5%;
+    position: absolute;
+}
+
+.person-type .teacher {
+    height: 55%;
+    background-color: #53DF83;
+}
+
+.person-type .teacher .type-picture {
+    height: 100%;
+    position: relative;
+}
+
+.person-type .teacher .type-picture img {
+    top: 25%;
+    right: 5%;
+    position: absolute;
+}
+
+.person-type .teacher .type-picture .info {
+    height: 100%;
+    width: 60%;
+    left: 5%;
+    top: 25%;
+    position: absolute;
+    font-family: sans-serif;
+    font-weight: 500;
+    text-align: center;
+    font-style: normal;
+    display: block;
+}
+
+.person-type .teacher .type-picture .info h2 {
+    color: white;
+    font-family: sans-serif;
+    font-weight: 800;
+    font-size: 5vh;
+}
+
+.person-type .teacher .type-picture .info p {
+    color: white;
+    font-family: sans-serif;
+    font-weight: 500;
+    font-size: 2vh;
+}
+
+.person-type .teacher .type-picture .next {
+    right: 5%;
+    bottom: 5%;
+    position: absolute;
+}
+
+.game-backg {
+    height: 180px;
+    background-image: url("../img/navigation.jpg");
+    background-size: cover;
+    display: block;
+    position: relative;
+}
+
+.game-modal {
+    background-image: url("../img/1.png");
+    background-size: cover;
+    height: 100%;
+}
+
+.game-backg h2 {
+    font-size: 2.5em;
+    text-align: center;
+    color: white;
+    left: 5%;
+}
+
+.game-backg p {
+    font-size: 1.5em;
+    text-align: center;
+    color: white;
+    left: 5%;
+    font-family: sans-serif;
+    font-weight: 500;
+}
+
+.game-type {
+    position: absolute;
+    bottom: 10%;
+    left: 15%;
+    display: flex;
+    margin: auto;
+}
+
+.game-type button {
+    margin-left: 10px;
+}
+
+.scroll {
+    min-height: 100%;
+}
+
+.scroll,
+.angular-leaflet-map {
+    height: 100%;
+}
+
+.leaflet-bottom {
+    bottom: 10px;
+}
+
+.games-cont .fab.button-fab-bottom-right {
+    top: auto;
+    right: 16px;
+    bottom: 25px;
+    left: auto;
+    position: relative;
+}
+
+/* Collapsed list */
+
+.list .item.item-accordion {
+    line-height: 38px;
+    padding-top: 0;
+    padding-bottom: 0;
+    transition: 0.09s all linear;
+}
+
+.list .item.item-accordion.ng-hide {
+    line-height: 0px;
+}
+
+.list .item.item-accordion.ng-hide-add,
+.list .item.item-accordion.ng-hide-remove {
+    display: block !important;
+}
+
+.createdAct {
+    margin-bottom: 20px;
+}
+
+
+
+/* Tasks creation */
+
+.tasks {
+    position: absolute;
+    bottom: 10%;
+    left: 15%;
+    display: flex;
+}
+
+.tasks .fab.button-fab {}
+
+.map-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* Play Game */
+
+#map {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+#smiley {
+    position: absolute;
+    right: 0%;
+    top: 2%;
+    opacity: 0.7;
+    z-index: 999;
+    outline: 0;
+}
+
+.bearing {
+    position: absolute;
+    right: 40%;
+    top: 100%;
+}
+
+#button-container {
+    top:auto;
+    right: 1%;
+    left: auto;
+    bottom: 16px;
+    position: absolute;
+}
+
+.map-button {
+    display: block;
+    position: relative;
+    margin-bottom: 5px;
+}
+
+/* Created games page  ------------------ */
+.allg_cont{
+   width: 100%;
+    height: 85%;
+    top:20%;
+    position: absolute;
+}
+.techm_h {
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: 900;
+    font-size: 5vh;
+    color: white;
+    top:50%;
+    margin-top: 50px;
+}
+
+.download_tiles {
+    width: 85%;
+    margin: auto;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    border-radius: 20px;
+    background-color: #FFEB3B;
+}
+
+.download_button {
+    background-color: aqua;
+    position: absolute;
+    height: 40%;
+    width: 40%;
+}
+
+.game_desc{
+    width: 100%;
+}
+.game-desc span {
+    font-size: 1.0em;
+}
+.game-desc .techm_diffc{
+    width: 100%;
+   height: 100%;
+    text-align: center;
+}
+.game-desc .techm_diffc i{
+}
+
+.game-desc  .play_but{
+     background: #53DF83;
+    border-radius: 30px;
+    width: 20vw;
+    height: 5vh;
+    color: white;
+    box-shadow: 0 0 0 0;
+    margin:auto;
+    margin-top: 3%;
+    text-align: center;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 900;
+    font-size: 1.5vh;
+    line-height: 5vh;
+}
+.game-desc  .play_but .content{
+    display: flex;
+    margin: auto;
+    width: 50%;
+}
+.game-desc  .play_but .content i{
+    margin-right: auto;
+    font-size: 5vh;
+}
+.game-desc  .play_but .content p{
+         margin-right: auto;
+     font-family: sans-serif;
+    font-weight: 700;
+    font-size: 3vh;
+    color: white;
+}
+
+.game-desc h2{
+     color: #3F51B5;
+    font-family: sans-serif;
+    font-weight: 900;
+    font-size: 4.5vh;
+    text-align: center;
+}
+.game-desc p{
+     color: #3F51B5;
+    font-family: sans-serif;
+    font-weight: 500;
+    font-size: 2vh;
+    text-align: center;
+}
+
+.teachm_menu{
+    width: 100%;
+    display: flex;
+    
+}
+
+.teachm_b {
+    background: #64B5F6;
+    border-radius: 25px;
+    width: 15vw;
+    height: 5vh;
+    color: white;
+    box-shadow: 0 0 0 0;;
+    margin-right: 5px;
+    text-align: center;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 900;
+    font-size: 1.5vh;
+    line-height: 5vh;
+}
+.back_icon{
+    font-size:6vh;position: fixed;top: 1.5%;left: 2%;  cursor: pointer; color:white;
+}
+.newgame_icon{
+    font-size:5vh;position: fixed;top: 2%;right: 2%; color:white;cursor: pointer;
+}
+
+/*Info tab */
+
+.info-tab {
+    height: 40%;
+    background-color: #3F51B5;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    display: block;
+    color: #fafafa;
+    position: relative;
+}
+
+.info-tab .information {
+    position: relative;
+    top: 20%;
+}
+
+.info-tab i {
+    font-size: 5em;
+}
+
+.info-tab h1 {
+    font-size: 2em;
+    text-align: center;
+    color: white;
+}
+
+.info-tab p {
+    font-size: 1.5em;
+    text-align: center;
+    color: white;
+}
+
+.info-tab h2 {
+    font-size: 2.5em;
+    text-align: center;
+    color: white;
+}
+
+
+/* Georefence Game */
+
+.georef_game {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.georef_game .georef_instr {
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: 500;
+}
+
+.georef_game .georef_instr .content {
+    margin: auto;
+    width: 90%;
+    height: 90%;
+    text-align: center;
+}
+
+.georef_game .georef_instr .content h1 {
+    position: relative;
+    top: 5%;
+    font-family: sans-serif;
+    font-weight: 900;
+    font-size: 4vh;
+    text-align: center;
+    color: white;
+    margin-bottom: 5%;
+}
+
+.georef_game .georef_instr .content p {
+    position: relative;
+    top: 20%;
+    font-family: sans-serif;
+    font-weight: 900;
+    font-size: 2vh;
+    text-align: center;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.georef_game .georef_instr .content .georef_icon {
+    position: relative;
+    top: 20%;
+    font-size: 4.5em;
+    color: white;
+}
+
+
+/* Modal window with explanation of the game rules */
+
+.plan-route {
+    height: 31%;
+    background-color: #3F51B5;
+    text-align: center;
+    display: block;
+    color: #fafafa;
+    position: relative;
+    background-color: #fec00f;
+}
+.plan-route .geor_result p{
+    font-family: sans-serif;
+    margin-top: 25px;
+    font-weight: 900;
+    font-size: 3vh;
+    text-align: center;
+    color: white;
+}
+.plan-route .geor_result h2{
+    color: white;
+    font-family: sans-serif;
+    font-weight: 900;
+    font-size: 5vh;
+}
+
+
+.plan-route i {
+    font-size: 5em;
+}
+
+.plan-route h1 {
+    font-family: sans-serif;
+    font-weight: 900;
+    font-size: 4vh;
+    text-align: center;
+    color: white;
+}
+
+.plan-route p {
+    font-family: sans-serif;
+    margin-top: 25px;
+    font-weight: 900;
+    font-size: 2.5vh;
+    text-align: center;
+    color: white;
+}
+
+
+/* Page where user chooses task types ---------------------------------------- */
+
+.task-type {
+    background-color: #80DEEA;
+    display: block;
+    height: 100%;
+}
+
+.task-type .type1 {
+    background-color: #3F51B5;
+    height: 50%;
+}
+
+.task-type .type1 .content {
+    position: relative;
+    top: 15%;
+}
+
+.task-type .type1 .content img {
+    position: relative;
+    top: 20%;
+    display: block;
+    margin: 0 auto;
+}
+
+.task-type .type1 .content h2 {
+    color: white;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: sans-serif;
+    font-weight: 500;
+}
+
+.task-type .type1 .content p {
+    color: white;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: sans-serif;
+    font-weight: 500;
+}
+
+.task-type .type2 {
+    background-color: #4CAF50;
+    height: 50%;
+}
+
+.task-type .type2 .content {
+    position: relative;
+    top: 15%;
+}
+
+.task-type .type2 .content img {
+    display: block;
+    margin: 0 auto;
+}
+
+.task-type .type2 .content h2 {
+    color: white;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: sans-serif;
+    font-weight: 500;
+}
+
+.task-type .type2 .content p {
+    color: white;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: sans-serif;
+    font-weight: 500;
+    font-size: 6vw;
+    line-height: 1em;
+}
+
+
+/* Georefence task creation -------------------------- */
+
+.photoPC {
+    position: absolute;
+    left: 40%;
+    display: block;
+}
+
+.photoPC h2 {
+    letter-spacing: 0.04em;
+    text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    color: black;
+    font-family: sans-serif;
+    font-weight: 500;
+}
+
+.georef {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+
+/* step 1*/
+
+.georef .georef_step1 {
+    height: 60%;
+    width: 100%;
+    position: relative;
+}
+
+.georef .georef_step1 img {
+    height: 300px;
+    width: 300px;
+    left: 40%;
+    top: 25%;
+    position: absolute;
+}
+
+.georef .georef_step1 button {
+    left: 20%;
+    top: 5%;
+    position: absolute;
+}
+
+.georef .georef_step1 .getpict {
+    left: 50%;
+    top: 5%;
+    position: absolute;
+}
+
+
+/* step 2 */
+
+.georef .georef_step2 {
+    left: 10%;
+    height: 30%;
+    width: 80%;
+    position: relative;
+}
+
+.georef .georef_step2 label {
+    top: 10%;
+    height: 70%;
+    width: 95%;
+}
+
+.georef .georef_step2 label input {
+    top: 10%;
+    height: 70%;
+    width: 100%;
+}
+
+
+/* step 3 */
+
+.georef .georef_step3 {
+    height: 10%;
+    width: 100%;
+    position: relative;
+}
+
+.dev-phase {
+    height: 100%;
+    width: 60%;
+    left: 25%;
+    top: 25%;
+    position: absolute;
+    letter-spacing: 0.04em;
+    text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.25);
+    font-family: "Lucida Grande", "Segoe UI", "Arial", sans-serif;
+    text-align: center;
+    font-style: normal;
+}
+
+.form-background {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-image: url("/www/img/april.jpg");
+    background-size: cover;
+}
+
+.input-info {
+    letter-spacing: 0.04em;
+    font-family: sans-serif;
+    font-weight: 500;
+    text-align: left;
+    font-style: normal;
+}
+
+
+/* List with all created points and task for each point ------------------*/
+
+.points-cont {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.points-cont .location-icon i {
+    letter-spacing: 0.04em;
+    font-family: sans-serif;
+    font-weight: 500;
+    text-align: center;
+    font-style: normal;
+}
+
+.points-cont .location-icon {
+    position: absolute;
+    left: 2%;
+    font-size: 1.1em;
+}
+
+.points-cont .new-task {
+    position: absolute;
+    right: 15%;
+    font-size: 1.1em;
+}
+
+.points-cont .all-tasks {
+    position: absolute;
+    right: 2%;
+    font-size: 1.1em;
+}
+
+.points-cont p {
+    position: absolute;
+    letter-spacing: 0.04em;
+    font-family: sans-serif;
+    font-weight: 500;
+    text-align: center;
+    font-style: normal;
+    left: 25%;
+    font-size: 1.2em;
+}
+
+.points-cont i {
+    position: absolute;
+    font-family: sans-serif;
+    font-weight: 500;
+    text-align: center;
+    right: 5%;
+}
+
+
+/* List with all the created activities in two windows: EDIT and NEW ------------------- */
+
+.activity-edit {
+    background-color: brown;
+    height: 90px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: black;
+}
+
+.activity-edit p {
+    letter-spacing: 0.04em;
+    font-family: sans-serif;
+    font-weight: 500;
+    text-align: center;
+    color: white;
+}
+
+.activity-new {
+    background-color: brown;
+    height: 90px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: black;
+}
+
+.activity-new p {
+    letter-spacing: 0.04em;
+    font-family: sans-serif;
+    font-weight: 500;
+    text-align: center;
+    color: white;
+}
+
+
+/*   Page with Languages --------------------------- */
+
+.lang-tab {
+    height: 30%;
+    background-color: #3F51B5;
+    font-family: sans-serif;
+    font-weight: 500;
+    text-align: center;
+    display: block;
+    color: #fafafa;
+    position: relative;
+}
+
+.lang-tab .information {
+    position: relative;
+    top: 20%;
+}
+
+.lang-tab i {
+    font-size: 5em;
+}
+
+.lang-tab h1 {
+    font-size: 2em;
+    text-align: center;
+    color: white;
+}
+
+.lang-tab p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+    text-align: center;
+    color: white;
+}
+
+.lang-country {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2em;
+    color: black;
+}
+
+
+/* Border line of game title */
+
+.red {
+    border: 2px solid red;
+}
+
+.black {
+    border: none;
+}
+
+
+/* Border line of new Waypoint Desription */
+
+.red {
+    border: 2px solid red;
+}
+
+.black {
+    border: none;
+}
+
+.feedback-icon {
+    font-size: 8em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+/* For error notifications */
+.ui-feedback {
+    margin-left:auto;
+    margin-right:auto;
+    margin-top: 25%;
+    font-size:5vw;
+    line-height: 5vw;
+    width:90%;
+    display:block;
+    background-color: #fec00f;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.ui-feedback-icon {
+    width: 15%;
+    display:table-cell;
+    vertical-align: middle;
+    font-size: 10vw;
+    color: brown;
+}
+
+.ui-feedback-message {
+    display:table-cell;
+}
+
+/* Make modals fullscreen for all devices, not only for small screens */
+@media (min-width: 680px) {
+  .modal {
+    top: 0px !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    width: 100% !important;
+  }
+  .platform-ios.platform-cordova .modal-wrapper .modal .bar-header:not(.bar-subheader) > * {
+    margin-top: 20px;
+  }
+  .platform-ios.platform-cordova .modal-wrapper .modal .bar-header:not(.bar-subheader) {
+    height: 64px;
+  }
+  .platform-ios.platform-cordova .modal-wrapper .modal .has-header,
+  .platform-ios.platform-cordova .modal-wrapper .modal .bar-subheader {
+    top: 64px;
+  }
+}
+
+/* Player name modal */
+
+.playerNameInput {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.playerNameInput h1 {
+    color: #ffffff;
+    display: block;
+    text-align: center;
+    font-size: 5vw;
+    font-weight: 700;
+}
+
+.playerNameInput h1 .nameOuter{
+    display: block;
+}
+
+.playerNameInput h1 .nameInner{
+    color: #fec00f;
+}
+
+.playerNameInput .playerNameButtonContainer {
+    display: table;
+    margin: 0 auto;
+}
+
+.playerNameInput .button {
+    display: table-cell;
+    margin: 2vw;
+    font-size: 3vw;
+}
+
+.playerNameInput input {
+    font-size: 3vw;
+}
+
+.playerNameInput label {
+    height: 4vw;
+}

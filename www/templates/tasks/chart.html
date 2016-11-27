@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<ion-modal-view>
+    <ion-view align-title="center" view-title="Pie">
+        <ion-content ng-controller="matchCtrl" style="height: 100%; text-align:center;">
+            <a class="skip_b" ng-click="modal.remove()">
+                <p style="color:green;">CANCEL</p>
+            </a>
+            <div ng-bind="tilesToBeRemoved"></div>
+            <canvas id="pie" class="chart chart-pie" chart-data="data" chart-labels="labels" chart-colors="colors" chart-dataset-override="datasetOverride" chart-click="onClickSlice" placeholder="{{ 'right_answer' | translate }}">
+                </canvas>
+
+        </ion-content>
+    </ion-view>
+</ion-modal-view>

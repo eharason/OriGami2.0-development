@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<ion-modal-view style="height:90%; ">
+    <ion-view align-title="center">
+        <ion-content style="text-align:center; background-color:#80DEEA;" data-tap-disabled="true" has-bouncing="false">
+            <a class="skip_b" ng-click="modal.remove()">
+                <p>FINISH</p>
+            </a>
+            <div class="newpoint_modal">
+
+                <ion-list show-delete="false" can-swipe="true" swipe-direction="both">
+                    <div id="em_game">
+                        <div ng-controller="matchCtrl">
+                            <div game-tiles></div>
+                        </div>
+
+                    </div>
+                </ion-list>
+            </div>
+        </ion-content>
+
+    </ion-view>
+</ion-modal-view>

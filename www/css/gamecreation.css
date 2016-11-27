@@ -1,0 +1,525 @@
+/* New game Creation wizard styles --------  */
+
+.page_maininfo {
+    height: 100%;
+    width: 100%;
+    background-color: #53DF83; /*#64B5F6*/
+    position: relative;
+}
+
+.step_done {
+    position: absolute;
+    right: 2%;
+    bottom: 9%;
+}
+
+.step_done img {
+    height: 70px;
+    width: 70px;
+}
+
+
+/* Step1: Main content */
+
+.page_content {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    display: block;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+}
+
+.page_content .content {
+    width: 100%;
+    top: 2%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.page_content .content .main_info {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 5%;
+}
+
+.page_content .content .main_info .row {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+}
+
+.com_time {
+    width: 51%;
+    margin: auto;
+    margin-left: 0;
+    border: 0;
+}
+
+
+/* Difficulty Slider */
+
+.page_content .content .main_info .row_diff {
+    margin-top: 50px;
+}
+
+.content .main_info .row_diff .diff_title span {
+    font-size: 4vh;
+}
+
+.row .diff_rate {
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+.row .diff_title {
+    margin-bottom: 10px;
+}
+
+.page_content .content .main_info input {
+    border-radius: 6px;
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 2vh;
+    color: #2196F3;
+}
+
+input.empty_field{
+    border-style:solid;
+    border-width:1.5px;	
+    border-color:#F44336;
+}
+
+textarea.empty_field{
+    border-style:solid;
+    border-width:1.5px;	
+    border-color:#F44336;
+}
+
+
+.page_content .content .main_info .input_time {
+    border-radius: 6px;
+    margin: auto;
+    width: 50%;
+    text-align: center;
+    margin-bottom: 10px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 2vh;
+    color: #2196F3;
+}
+
+.page_content .content .main_info textarea {
+    border-radius: 6px;
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 2vh;
+    color: #2196F3;
+}
+
+.page_content .content .main_info span {
+    color: white;
+    width: 100%;
+    font-size: 2.5vh;
+    margin: auto;
+}
+
+.page_content .content h2 {
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    font-size: 6vh;
+    margin-bottom: 20px;
+}
+
+p {
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 6vh;
+    margin-bottom: 20px;
+}
+
+
+/* ----------------- */
+
+
+/* Step 2: Choosing Activity */
+
+.page2 {
+    height: 100%;
+    width: 100%;
+    background-color: #53DF83;
+    position: relative;
+}
+
+.page_content .content {
+    height: 100%;
+}
+
+.page_content .content .act_conts {
+    position: relative;
+    top: 5%;
+    width: 90%;
+    height: 60%;
+    display: flex;
+    margin: 0 auto;
+}
+
+.page_content .content .act_conts .act {
+    width: 50%;
+    height: 100%;
+}
+
+.act_cont {
+    background-color: #64B5F6;
+    border-radius: 20px;
+    width: 70%;
+    height: 70%;
+    color: white;
+    margin: auto;
+    margin-top: 5%;
+    box-shadow: 0 0 0 0;
+    text-align: center;
+    display: table;
+}
+
+.act_conts .act .act_cont .dest_route {
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.dest_route p {
+    font-size: 4vh;
+}
+
+.dest_route img {
+    width: 75px;
+    height: 75px;
+}
+
+.isChoosen {
+    background-color: #03A9F4;
+    width: 90%;
+    height: 90%;
+    margin-top: 2.5%;
+}
+
+.isChoosen img {
+    width: 85px;
+    height: 85px;
+}
+
+
+/* ---------------------- */
+
+
+/* Step 3: Adding points to the map */
+
+.page3 {
+    height: 100%;
+    width: 100%;
+    background-color: #53DF83;
+    position: relative;
+}
+
+.page3 .content {
+    height: 100%;
+}
+
+.page3 .content .content_map {
+    height: 65%;
+    width: 98%;
+    margin: auto;
+}
+
+
+/* Modal Window ----*/
+
+.newpoint_modal {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+.newpoint_modal img {
+    width: 120px;
+    height: 120px;
+    margin-left: 0;
+    margin-top: 0;
+}
+
+.newpoint_modal h2{
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    font-size: 4.5vh;
+}
+
+.newpoint_modal .point_cont .point_info .name {
+    display: flex;
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+.newpoint_modal .point_cont .point_info .desc {
+    display: flex;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.point_cont {
+    width: 100%;
+    height: 60%;
+}
+
+.point_info {
+    width: 100%;
+    height: 70%;
+    display: block;
+}
+
+.point_inp {
+    width: 70%;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.point_cont .point_info .point_inp span {
+    color: white;
+    font-size: 3vh;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+.point_cont .point_info .point_inp input {
+    margin: 0 auto;
+    border-radius: 6px;
+    margin: auto;
+    width: 70%;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 2vh;
+}
+
+.point_cont .point_info .point_inp textarea {
+    margin: 0 auto;
+    border-radius: 6px;
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 2vh;
+}
+
+.point_butt {
+    display: block;
+}
+
+.point_butt .save_but {
+    width: 50%;
+    border-radius: 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    font-size: 2vh;
+    color:white;
+    background-color: #53DF83;
+    box-shadow: 0 0 0 0;
+}
+
+.point_butt .canc_but {
+    width: 40%;
+    background-color: #2196F3;
+    border-radius: 10px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    font-size: 2vh;
+}
+
+
+/* ------------------------- */
+
+
+/* Step 4: Adding tasks to activity */
+.tasktp_con{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+.tasktp_con h2{
+     color: white;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    font-size: 5.5vh;
+    margin-top: 15px;
+}
+.task_ts{
+    width: 100%;
+    height: 70%;
+    margin-top: 25px;
+}
+.task_ts h2{
+        font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 3.5vh;
+}
+.task_t{
+    height: 50%;
+    width: 90%;
+    margin: auto;
+    border-radius: 35px;
+    display: flex;
+}
+.quiz_t{
+    background-color: #53DF83;
+    margin-bottom: 25px;
+    display: table;
+}
+.quiz_t .picture{
+    width: 20%;
+    display: table-cell;
+    vertical-align:middle;
+}
+.quiz_t .picture img{
+    display: table-cell; 
+    margin: auto;
+}
+.quiz_t .description{
+    display: table-cell;
+    vertical-align:middle;
+}
+.quiz_t .description h2{
+    width: 80%;
+}
+
+.gref_t{
+    background-color:#FCC929;
+    display: table;
+}
+.gref_t .picture{
+    width: 20%;
+    display: table-cell;
+    vertical-align:middle;
+}
+.gref_t .picture img{
+    display: table-cell; 
+    margin: auto;
+}
+.gref_t .description{
+    display: table-cell;
+    vertical-align:middle;
+}
+.gref_t .description h2{
+    width: 80%;
+}
+.skip_b{
+    position: fixed;
+    right: 1%;
+    top:2%;
+}
+.skip_b p{
+    font-size: 2.5vh;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+}
+.stop_b{
+    position: fixed;
+    left: 2%;
+    top: 3%;
+}
+.stop_b p{
+    font-size: 2.5vh;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+}
+
+/* Final Page */
+.page4 {
+    height: 100%;
+    width: 100%;
+    background-color: #53DF83;
+    position: relative;
+}
+
+.page4 .content {
+
+}
+
+.page4 .crtd_icon img{
+    width: 20vh;
+    height: 20vh;
+}
+.page4 .content .final_desc{
+    position: relative;
+    top:5%;
+}
+
+.page4 .final_info{
+    font-size: 4vh;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    margin-bottom: 25px;
+}
+
+.page4 .final_p_info{
+    font-size: 5.5vh;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    margin-top: 50px;
+}
+
+
+/* Photo taking button */
+.inputfile {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+
+/* Forward and backwards Buttons */
+.page_menu {
+    position: fixed;
+    height: 15%;
+    width: 100%;
+    bottom: 0;
+    display: flex;
+}
+
+.page_menu .navi {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    text-align: center;
+}
+
+.button_navi {
+    background: rgba(255,0,0,  0);
+    border-radius: 25px;
+    border-style: solid;
+    border-width: 3px;
+    width: 40%;
+    height: 35%;
+    color: white;
+    box-shadow: 0 0 0 0;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    font-size: 2vh;
+}
