@@ -401,7 +401,7 @@ angular.module('starter.services', [])
     };
     data.loadGame = function (name) {
         var defer = $q.defer();
-        var games = $http.get('test_data/games.json')
+        var games = $http.get('test_data/games_mue.json')
         // var games = $http.get('https://' + Server + '/games/item/' + name)
             .then(
                 function (response) { // On success
@@ -536,7 +536,8 @@ angular.module('starter.services', [])
      */
     state.todoWaypointIndex = function () {
         if (allWaypointsCleared === true) {
-            // $rootScope.$broadcast('waypointscleared');
+            $rootScope.$broadcast('waypointscleared');
+            console.log($rootScope.$broadcast('waypointscleared'))
             //waypointIndex = -2; // invalid index
         } else {
             if (waypointIndex == GameData.getNumWaypoints(activityIndex) - 1) {
